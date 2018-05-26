@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_cats"
+            android:icon="@drawable/ic_filter_list_black_24dp"
+            android:title="@string/cats" />
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/fav" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="@string/search" />
+
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/my_account" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/share_app" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/auth_logout" />
+        </menu>
+    </item>
+
+</menu>

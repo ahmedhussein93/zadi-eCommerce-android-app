@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cafateria">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- auth -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- Google MAP API key -->
+
+    <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyDKymeBXNeiFWY5jRUejv6zItpmr2MVyQ0" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppCompactFullScreenAndNoActionbar">
+
+        <!-- Enables the Google Pay API -->
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity
+            android:name=".activities.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".auth.AuthConfirmAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auth.AuthRecoverPassword"
+            android:screenOrientation="portrait" />
+        <activity android:name=".auth.AuthLog" />
+        <activity
+            android:name=".auth.AuthCompleteUserInfo"
+            android:screenOrientation="portrait" />
+
+        <!-- auth -->
+        <!--
+             <meta-data
+             android:name="com.google.android.gms.version"
+             android:value="@integer/google_play_services_version" />
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCqykKgnfxS0nv2sQj1Eb3Esz14Rl2jxO4" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/auth_facebook_app_id" />
+
+        <activity
+            android:name=".activities.Home"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompactFullScreenAndNoActionbar" />
+        <activity
+            android:name=".activities.Account"
+            android:label="@string/title_activity_my_account"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompactFullScreenAndNoActionbar" />
+        <activity
+            android:name=".helper.ImageCropper"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".helper.ProfileImageCropper"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".activities.Settings"
+            android:label="@string/settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Search"
+            android:label="@string/settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddFood"
+            android:label="@string/add_food"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Fav"
+            android:label="@string/settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Cart"
+            android:label="@string/settings"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.FoodDetails" />
+        <activity
+            android:name=".activities.Details"
+            android:label="@string/title_activity_details"
+            android:theme="@style/AppCompactFullScreenAndNoActionbar" />
+        <activity
+            android:name=".activities.SelectDiseases"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CompleteOrderInfo"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.OrderDone" />
+        <activity android:name=".activities.ShowOrdrs" />
+        <activity android:name=".activities.ShowOrderDetails" />
+        <activity android:name=".activities.DatePickerTimePickerActivity" />
+        <activity android:name=".activities.ManageCats" />
+        <activity android:name=".activities.ManageUsers" />
+        <activity android:name=".activities.AdminSettings" />
+        <activity android:name=".activities.Categories" />
+        <activity android:name=".activities.TestSectionedRecycleView">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".activities.LessQuantity" />
+
+        <service
+            android:name=".services.AdminService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="true" />
+
+        <activity
+            android:name=".activities.DialogLessActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/rounded_dialog_activity" />
+        <activity android:name=".activities.EditFood" />
+        <activity android:name=".activities.ManageDiseases" />
+
+
+        <!-- notification -->
+        <receiver android:name=".notification.autostart">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".notification.RegistrationIntentService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!-- [END fcm_default_icon] -->
+        <!-- [START fcm_default_channel] -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <!-- [END fcm_default_channel] -->
+
+        <!--     /     -->
+    </application>
+
+</manifest>

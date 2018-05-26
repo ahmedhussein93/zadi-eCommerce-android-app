@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_less_values">
+        <item>15د</item>
+        <item>30د</item>
+        <item>45د</item>
+        <item>1س</item>
+        <item>2س</item>
+        <item>3س</item>
+        <item>4س</item>
+        <item>5س</item>
+        <item>6س</item>
+        <item>8س</item>
+        <item>10س</item>
+        <item>12س</item>
+    </string-array>
+</resources>

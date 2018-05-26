@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="colorPrimary">#616161</color>
+     <color name="colorPrimaryDark">#212121</color>
+     <color name="colorAccent">#9E9E9E</color>
+     <color name="colorAccent2">#BDBDBD</color>
+     <color name="colorAccent3">#E0E0E0</color>-->
+
+    <color name="colorPrimary">#FF80AB</color>
+    <color name="colorPrimaryDark">#FF4081</color>
+    <color name="colorAccent">@color/white</color>
+    <color name="colorAccent2">#fda2c1</color>
+    <color name="colorAccent3">#ffbdd4</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="auth_transparent">#00000000</color>
+    <color name="auth_bg_color">@color/colorAccent</color>
+    <color name="auth_input_border_color">@color/auth_bg_login</color>
+    <color name="auth_bg_login">#26ae90</color>
+    <color name="auth_white">#ffffff</color>
+    <color name="link">#3366BB</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+
+    <color name="trans">#00000000</color>
+    <color name="green">#0f0</color>
+    <color name="red">#f00</color>
+    <color name="yellow">#fffb00</color>
+</resources>

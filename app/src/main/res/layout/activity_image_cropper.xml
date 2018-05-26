@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativelayoutwholeactivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageCropper">
+
+
+    <!--<ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />-->
+    <com.cafateria.helper.CustomImageVIew
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="matrix"
+        android:background="#00ffffff"/> <!--important-->
+
+    <ImageView
+        android:id="@+id/rotate"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/rotate"
+        android:padding="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rect"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_sellector"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@drawable/btn_text_color"
+        android:textSize="25dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_add_foods"
+            android:icon="@drawable/plus_24"
+            android:title="@string/add_food" />
+        <item
+            android:id="@+id/nav_manage_cats"
+            android:icon="@drawable/ic_filter_list_black_24dp"
+            android:title="@string/manage_cats" />
+        <item
+            android:id="@+id/nav_less_quantity"
+            android:icon="@drawable/ic_filter_list_black_24dp"
+            android:title="@string/less_quantity" />
+        <item
+            android:id="@+id/nav_manage_users"
+            android:icon="@drawable/ic_supervisor_account_black_24dp"
+            android:title="@string/manage_users" />
+
+        <item
+            android:id="@+id/nav_manage_diseases"
+            android:icon="@drawable/ic_supervisor_account_black_24dp"
+            android:title="@string/manage_diseases" />
+
+
+        <item
+            android:id="@+id/nav_show_orders"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="@string/show_orders" />
+
+
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/my_account" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_admin_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/share_app" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/auth_logout" />
+        </menu>
+    </item>
+
+</menu>

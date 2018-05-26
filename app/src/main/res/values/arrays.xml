@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="alert_less_values">
+        <item>15m</item>
+        <item>30m</item>
+        <item>45m</item>
+        <item>1h</item>
+        <item>2h</item>
+        <item>3h</item>
+        <item>4h</item>
+        <item>5h</item>
+        <item>6h</item>
+        <item>8h</item>
+        <item>10h</item>
+        <item>12h</item>
+    </string-array>
+
+    <string-array name="alert_less_amount_values">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>500</item>
+        <item>750</item>
+        <item>1000</item>
+    </string-array>
+
+    <string-array name="alert_less_values_">
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>240</item>
+        <item>300</item>
+        <item>360</item>
+        <item>480</item>
+        <item>600</item>
+        <item>720</item>
+    </string-array>
+
+
+    <string-array name="listLanguages">
+        <item>english</item>
+        <item>عربى</item>
+    </string-array>
+
+    <string-array name="languageValues">
+        <item>en</item>
+        <item>ar</item>
+    </string-array>
+</resources>

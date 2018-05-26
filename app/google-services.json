@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "232531155970",
+    "firebase_url": "https://push-notification93.firebaseio.com",
+    "project_id": "push-notification93",
+    "storage_bucket": "push-notification93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232531155970:android:ba40d4ad39ca4c76",
+        "android_client_info": {
+          "package_name": "com.cafateria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232531155970-v06po8k69it6qctb98n14u309p8a7bsq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cafateria",
+            "certificate_hash": "64c41d877f0925b0a28e916c9e1349f3c5e53669"
+          }
+        },
+        {
+          "client_id": "232531155970-8r6dt6hc48fni5lglr2tpmu22upt47ef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP8yGyi5VVGr0GEZGBRSyEmmkxMIHGNeg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232531155970-8r6dt6hc48fni5lglr2tpmu22upt47ef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
